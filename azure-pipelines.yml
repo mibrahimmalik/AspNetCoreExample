@@ -20,3 +20,7 @@ steps:
     command: 'publish'
     publishWebProjects: true
     zipAfterPublish: true
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: AspNetCoreExample
