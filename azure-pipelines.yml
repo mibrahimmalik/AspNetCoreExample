@@ -19,6 +19,7 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: true
+    packDirectory: $(Build.ArtifactStagingDirectory) 
     zipAfterPublish: true
 - task: PublishBuildArtifacts@1
   inputs:
